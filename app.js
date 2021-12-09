@@ -12,7 +12,7 @@ const computeScore = () => {
 
 const appendInfo = () => {
   const mortality = `<p>Mortality: ${curb65[curbScore].mortality}%</p>`;
-  const recommendation = `<p>Recommendation: ${curb65[curbScore].recommendation}</p>`;
+  const recommendation = `<p>${curb65[curbScore].recommendation}</p>`;
   infoBox.insertAdjacentHTML('beforeend', `${mortality} ${recommendation}`);
 };
 

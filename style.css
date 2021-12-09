@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -13,6 +12,26 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.calculator {
+  background-color: white;
+  padding: 50px;
+  border-radius: 4px;
+}
+
+.recommendation {
+  background-color: #464D77;
+  color: white;
+  padding: 16px 50px;
+  border-radius: 4px;
+}
+
 .checkbox {
   position: absolute;
   transform: scale(0);
@@ -20,9 +39,10 @@ body {
 
 .checkbox + label {
   border: 1px solid #464D77;
+  background-color: #FEF9FF;
   display: inline-block;
   font-weight: 100;
-  padding: 12px 20px;
+  padding: 9px 18px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -41,4 +61,3 @@ form {
   display: flex;
   flex-wrap: wrap;
 }
-

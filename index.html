@@ -9,36 +9,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>CURB-65 Calculator</h1>
-      <h3>Select the features that apply:</h3>
-      <form>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="confusion" value="1">
-          <label for="confusion">Confusion</label>
-        </div>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="uraemia" value="1">
-          <label for="uraemia">Urea > 7mmol/L</label>
-        </div>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="tachypnoea" value="1">
-          <label for="tachypnoea">Respiratory rate >= 30</label>
-        </div>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="sbp" value="1">
-          <label for="sbp">Systolic BP < 90mmHg</label>
-        </div>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="dbp" value="1">
-          <label for="dbp">Diastolic BP <= 60mmHg</label>
-        </div>
-        <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" id="age" value="1">
-          <label for="age">Age >= 65</label>
-        </div>
-      </form>
-      <h3>CURB-65 score: <span id="score">0</span> </h3>
-      <p id="info"></p>
+      <section class="calculator">
+        <h1>CURB-65 Calculator</h1>
+        <h3>Select the features that apply:</h3>
+        <form>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="confusion" value="1">
+            <label for="confusion">Confusion</label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="uraemia" value="1">
+            <label for="uraemia">Urea > 7mmol/L</label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="tachypnoea" value="1">
+            <label for="tachypnoea">Respiratory rate >= 30</label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="sbp" value="1">
+            <label for="sbp">Systolic BP < 90mmHg</label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="dbp" value="1">
+            <label for="dbp">Diastolic BP <= 60mmHg</label>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" id="age" value="1">
+            <label for="age">Age >= 65</label>
+          </div>
+        </form>
+      </section>
+      <section class="recommendation">
+        <h3>CURB-65 score: <span id="score">0</span> </h3>
+        <p id="info"></p>
+      </section>
     </div>
     <script src='app.js'></script>
   </body>
