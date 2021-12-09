@@ -1,6 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #FEF9FF;
+  color: #303030;
+  font-family: 'Inconsolata', monospace;
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
   width: 60%;
   margin: 0 auto;
 }
+
+.checkbox {
+  position: absolute;
+  transform: scale(0);
+}
+
+.checkbox + label {
+  border: 1px solid #464D77;
+  font-weight: 100;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.checkbox:checked + label {
+  background-color: #464D77;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.checkbox-container {
+  padding: 16px;
+}
+

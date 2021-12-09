@@ -12,32 +12,29 @@
       <h1>CURB-65 Calculator</h1>
       <h3>Select the features that apply:</h3>
       <form>
-        <div>
-          <input type="checkbox" id="confusion">
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="confusion">
           <label for="confusion">Confusion</label>
         </div>
-        <div>
-          <input type="checkbox" id="uraemia">
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="uraemia">
           <label for="uraemia">Urea > 7mmol/L</label>
         </div>
-        <div>
-          <input type="checkbox" id="tachypnoea">
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="tachypnoea">
           <label for="tachypnoea">Respiratory rate >= 30</label>
         </div>
-        <div>
-          <input type="checkbox" id="hypotension">
-          <label for="hypotension">Systolic blood pressure < 90mmHg</label>
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="sbp">
+          <label for="sbp">Systolic BP < 90mmHg</label>
         </div>
-        <div>
-          <input type="checkbox" id="hypotension">
-          <label for="hypotension">Diastolic blood pressure <= 60mmHg</label>
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="dbp">
+          <label for="dbp">Diastolic BP <= 60mmHg</label>
         </div>
-        <div>
-          <input type="checkbox" id="age">
-          <label for="age">>= 65 years</label>
-        </div>
-        <div>
-          <input type="submit">
+        <div class="checkbox-container">
+          <input class="checkbox" type="checkbox" id="age">
+          <label for="age">Age >= 65</label>
         </div>
       </form>
     </div>
