@@ -29,13 +29,11 @@ const incrementScore = (checkbox) => {
   checkHypotension();
   if (checkbox.checked) {
     curbScore += parseInt(checkbox.value, 10);
-    computeScore();
-    appendInfo();
   } else {
     curbScore -= parseInt(checkbox.value, 10);
-    computeScore();
-    appendInfo();
   }
+  computeScore();
+  appendInfo();
 };
 
 checkboxes.forEach((checkbox) => {
