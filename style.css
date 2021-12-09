@@ -30,6 +30,7 @@ body {
   color: white;
   padding: 16px 50px;
   border-radius: 4px;
+  display: none;
 }
 
 .checkbox {
