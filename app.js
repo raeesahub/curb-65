@@ -7,12 +7,12 @@ const diastolicBP = document.querySelector('#dbp');
 
 let curbScore = 0;
 
-const computeScore = () => {
+const displayScore = () => {
   scoreBox.innerText = curbScore;
-  infoBox.innerHTML = '';
 };
 
 const appendInfo = () => {
+  infoBox.innerHTML = '';
   recommendationBox.style.display = 'block';
   const mortality = `<p>Mortality: ${curb65[curbScore].mortality}%</p>`;
   const recommendation = `<p>${curb65[curbScore].recommendation}</p>`;
@@ -26,18 +26,22 @@ const checkHypotension = () => {
 };
 
 const incrementScore = (checkbox) => {
-  checkHypotension();
   if (checkbox.checked) {
     curbScore += parseInt(checkbox.value, 10);
   } else {
     curbScore -= parseInt(checkbox.value, 10);
   }
-  computeScore();
-  appendInfo();
 };
 
+const calculateCURB = (checkbox) => {
+  checkHypotension();
+  incrementScore(checkbox);
+  displayScore();
+  appendInfo();
+}
+
 checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener('change', () => { incrementScore(checkbox); });
+  checkbox.addEventListener('change', () => { calculateCURB(checkbox); });
 });
 
 const curb65 = [
